@@ -1,0 +1,74 @@
+<div class="cardContainer flex flex-col  bg-[#8A74F9] rounded-lg  text-white">
+  <div class="firstSection grid grid-cols-12 p-4">
+    <div class="col-span-2">
+      <div class="deleteIcon cursor-pointer" [pTooltip]="TranslationService.isArabic() ? 'حذف' :'Remove'" tooltipPosition="bottom">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19.25 6.16926C19.2317 6.16926 19.2042 6.16926 19.1767 6.16926C14.3275 5.68342 9.48751 5.50009 4.69335 5.98592L2.82335 6.16926C2.43835 6.20592 2.09918 5.93092 2.06251 5.54592C2.02585 5.16092 2.30085 4.83092 2.67668 4.79426L4.54668 4.61092C9.42335 4.11592 14.3642 4.30842 19.3142 4.79426C19.69 4.83092 19.965 5.17009 19.9283 5.54592C19.9008 5.90342 19.5983 6.16926 19.25 6.16926Z" fill="white"/>
+          <path d="M7.79167 5.24343C7.755 5.24343 7.71833 5.24343 7.6725 5.23426C7.30583 5.17009 7.04917 4.81259 7.11333 4.44593L7.315 3.24509C7.46167 2.36509 7.66333 1.14593 9.79916 1.14593H12.2008C14.3458 1.14593 14.5475 2.41093 14.685 3.25426L14.8867 4.44593C14.9508 4.82176 14.6942 5.17926 14.3275 5.23426C13.9517 5.29843 13.5942 5.04176 13.5392 4.67509L13.3375 3.48343C13.2092 2.68593 13.1817 2.53009 12.21 2.53009H9.80833C8.83667 2.53009 8.81833 2.65843 8.68083 3.47426L8.47 4.66593C8.415 5.00509 8.12167 5.24343 7.79167 5.24343Z" fill="white"/>
+          <path d="M13.9425 20.8543H8.05751C4.85834 20.8543 4.73001 19.0851 4.62918 17.6551L4.03334 8.42426C4.00584 8.04842 4.29918 7.71843 4.67501 7.69093C5.06001 7.67259 5.38084 7.95676 5.40834 8.33259L6.00418 17.5634C6.10501 18.9568 6.14168 19.4793 8.05751 19.4793H13.9425C15.8675 19.4793 15.9042 18.9568 15.9958 17.5634L16.5917 8.33259C16.6192 7.95676 16.9492 7.67259 17.325 7.69093C17.7008 7.71843 17.9942 8.03926 17.9667 8.42426L17.3708 17.6551C17.27 19.0851 17.1417 20.8543 13.9425 20.8543Z" fill="white"/>
+          <path d="M12.5217 15.8126H9.46918C9.09334 15.8126 8.78168 15.5009 8.78168 15.1251C8.78168 14.7493 9.09334 14.4376 9.46918 14.4376H12.5217C12.8975 14.4376 13.2092 14.7493 13.2092 15.1251C13.2092 15.5009 12.8975 15.8126 12.5217 15.8126Z" fill="white"/>
+          <path d="M13.2917 12.1459H8.70834C8.33251 12.1459 8.02084 11.8343 8.02084 11.4584C8.02084 11.0826 8.33251 10.7709 8.70834 10.7709H13.2917C13.6675 10.7709 13.9792 11.0826 13.9792 11.4584C13.9792 11.8343 13.6675 12.1459 13.2917 12.1459Z" fill="white"/>
+          </svg>
+
+      </div>
+
+    </div>
+    <div class="col-span-8">
+      <div class="flex flex-col  gap-y-4 items-center">
+
+              <div class="headerSectionForCard font-medium">
+                {{'Card.HeadSection'|translate}}
+              </div>
+        <div class="flex gap-x-4 bg-white text-black w-fit items-center rounded-lg p-3 border-dashed border-2">
+          <div class="copyIcon cursor-pointer" (click)="copyUrl('www.tazkty.com/473847')" [pTooltip]="TranslationService.isArabic() ? 'نسخ' :'Copy'" tooltipPosition="bottom">
+            <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.11467 14.1373H2.84083C1.6228 14.1373 0.631897 13.1464 0.631897 11.9283V4.44558C0.631897 3.22754 1.6228 2.23664 2.84083 2.23664H8.11467C9.3327 2.23664 10.3236 3.22754 10.3236 4.44558V11.9283C10.3236 13.1464 9.3327 14.1373 8.11467 14.1373ZM2.84083 3.34111C2.23186 3.34111 1.73636 3.8366 1.73636 4.44558V11.9283C1.73636 12.5373 2.23186 13.0328 2.84083 13.0328H8.11467C8.72364 13.0328 9.21914 12.5373 9.21914 11.9283V4.44558C9.21914 3.8366 8.72364 3.34111 8.11467 3.34111H2.84083ZM12.5325 10.5478V2.20903C12.5325 0.990993 11.5416 9.15527e-05 10.3236 9.15527e-05H4.19381C3.88878 9.15527e-05 3.64157 0.247299 3.64157 0.552326C3.64157 0.857352 3.88878 1.10456 4.19381 1.10456H10.3236C10.9326 1.10456 11.4281 1.60005 11.4281 2.20903V10.5478C11.4281 10.8528 11.6753 11.1 11.9803 11.1C12.2853 11.1 12.5325 10.8528 12.5325 10.5478Z" fill="#8A74F9"/>
+              </svg>
+
+          </div>
+          <div class="textToCopy">
+            www.tazkty.com/473847
+          </div>
+        </div>
+        <div class="expireTill font-medium">
+          {{'Card.ExpireTill'|translate}}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="separatorSection my-2 flex items-center" [class]="!TranslationService.isArabic() ? 'flex-row-reverse':'flex-row'">
+    <div class="leftCone"></div>
+    <div class="separator border-2 border-dashed border-[#FFFFFF66] flex-1"></div>
+    <div class="rightCone"></div>
+  </div>
+  <div class="qrCodeSection flex justify-between items-end px-6 my-2" [class]="TranslationService.isArabic() ? 'flex-row-reverse':'flex-row'">
+    <div class="Qr">
+      <qrcode qrdata="www.tazkty.com/473847" [width]="100" [margin]="1"  elementType="img" cssClass="curvedImg"></qrcode>
+    </div>
+    <div class="flex items-end gap-x-4">
+      <div class="flex flex-col ">
+        <span>
+          {{'Card.Discount'|translate}}
+
+        </span>
+        <span>
+          25%
+        </span>
+      </div>
+      <div class="border-2 flex items-center gap-x-1 px-2 rounded-lg cursor-pointer"  tooltipPosition="bottom" [pTooltip]="TranslationService.isArabic() ? 'مشاركة' :'Share'" tooltipPosition="bottom">
+        <div class="sendIcon">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.52 14.4201C7.30666 14.4201 8.42 13.8668 9.3 11.2201L9.78 9.78009L11.22 9.30009C13.86 8.42009 14.4133 7.30676 14.4133 6.52009C14.4133 5.74009 13.86 4.62009 11.22 3.73343L5.56 1.84676C4.14667 1.37343 2.96667 1.51343 2.24 2.23343C1.51333 2.95343 1.37333 4.14009 1.84667 5.55343L3.73333 11.2134C4.62 13.8668 5.73333 14.4201 6.52 14.4201ZM10.9067 4.68676C12.76 5.30676 13.42 6.04009 13.42 6.52009C13.42 7.00009 12.76 7.73343 10.9067 8.34676L9.22667 8.90676C9.08 8.95343 8.96 9.07343 8.91333 9.22009L8.35333 10.9001C7.74 12.7534 7 13.4134 6.52 13.4134C6.04 13.4134 5.30667 12.7534 4.68667 10.9001L2.8 5.24009C2.46 4.21343 2.52 3.37343 2.95333 2.94009C3.38667 2.50676 4.22667 2.45343 5.24667 2.79343L10.9067 4.68676Z" fill="white"/>
+            <path d="M9.26 9.60009C9.38667 9.60009 9.51333 9.55342 9.61333 9.45342C9.80667 9.26009 9.80667 8.94009 9.61333 8.74675L7.22667 6.35342C7.03333 6.16009 6.71333 6.16009 6.52 6.35342C6.32667 6.54675 6.32667 6.86675 6.52 7.06009L8.90667 9.45342C9 9.55342 9.13333 9.60009 9.26 9.60009Z" fill="white"/>
+            </svg>
+        </div>
+          <div class="sendText">
+            {{'Card.Share'|translate}}
+
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p-toast [position]="TranslationService.isArabic() ? 'top-right':'top-left'"></p-toast>

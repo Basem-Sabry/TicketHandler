@@ -1,0 +1,24 @@
+.rtl {
+  direction: rtl;
+}
+.ltr {
+  direction: ltr;
+}
+::ng-deep .arabicFont{
+  font-family: 'Neo Sans Arabic', sans-serif;
+
+}
+::ng-deep .arabicFont table{
+  font-family: 'Neo Sans Arabic', sans-serif;
+
+}
+::ng-deep .enFont{
+  font-family: 'Inter', sans-serif;
+
+
+}
+::ng-deep .enFont table{
+  font-family: 'Inter', sans-serif;
+
+
+}

@@ -1,0 +1,24 @@
+.leftCone{
+  width: 1em;
+  height: 2em;
+  display: block;
+  background-color: #F3F5F7;
+  border-top-left-radius: 99px;
+  border-bottom-left-radius: 99px;
+
+}
+.rightCone{
+  width: 1em;
+  height: 2em;
+  display: block;
+  background-color: #F3F5F7;
+  border-top-right-radius: 99px;
+  border-bottom-right-radius: 99px;
+
+}
+::ng-deep .p-toast-message-content{
+  gap:1em
+}
+::ng-deep .curvedImg img{
+  border-radius: 8px;
+}
